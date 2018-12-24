@@ -1,8 +1,8 @@
 name: BanMan
 version: 1.0
 author: TheRandomGamer
-main: me.therandomgamer.BanMan.Main
+main: me.therandomgamer.afkgames.Main
 commands:
-    banman:
-      usage: /banman [player]
-      description: The Main Command for the BanMan Plugin
+    afkgames:
+      usage: /afkgames help
+      description: The Main Command for the AFKGames Plugin

@@ -7,6 +7,6 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         super.onEnable();
-        Bukkit.getPluginCommand("banman").setExecutor(new MainCommand());
+        Bukkit.getPluginCommand("afkgames").setExecutor(new MainCommand());
     }
 }
