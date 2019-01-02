@@ -56,5 +56,28 @@ public class GameManager {
         return null;
     }
 
+    public Game getGameFromPlayer(Player p){
+        for(Game g: games){
+            if(g.getPlayers().contains(p)){
+                return g;
+            }
+        }
+        return null;
+    }
+
+    public List<Game> getGamesWherePlayerIsMod(Player p){
+
+        List<Game> returnList = new LinkedList<Game>();
+
+        for(Game g: games){
+
+            if(g.getModerators().contains(p) || g.getLeaders().contains(p)){
+                returnList.add(g);
+            }
+        }
+        return returnList;
+    }
+
+
 
 }

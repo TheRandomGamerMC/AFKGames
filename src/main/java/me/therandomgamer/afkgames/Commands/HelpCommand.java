@@ -13,7 +13,7 @@ public class HelpCommand implements ICommand {
         c.sendMessage(ChatColor.AQUA+""+ChatColor.BOLD+"start: "+ChatColor.RESET+"This starts the game");
         c.sendMessage(ChatColor.AQUA+""+ChatColor.BOLD+"setspawn: "+ChatColor.RESET+"Sets the spawn point for players to join");
         c.sendMessage(ChatColor.AQUA+""+ChatColor.BOLD+"remove [player]: "+ChatColor.RESET+"This removes the player");
-        c.sendMessage(ChatColor.AQUA+""+ChatColor.BOLD+"add [player]: "+ChatColor.RESET+"Externally add a player");
+        c.sendMessage(ChatColor.AQUA+""+ChatColor.BOLD+"add [player] <Leader>: "+ChatColor.RESET+"Externally add a player, if someone is mod in multiple games, they have to specify a leader of the specific game");
         c.sendMessage(ChatColor.AQUA+""+ChatColor.BOLD+"onblock remove/keep [material]: "+ChatColor.RESET+"This will either remove all the players not standing on a certain blocktype or remove all players  not standing on a certain blocktype");
         c.sendMessage(ChatColor.AQUA+""+ChatColor.BOLD+"mod: "+ChatColor.RESET+"This will mod a player, mods can remove people");
         c.sendMessage(ChatColor.AQUA+""+ChatColor.BOLD+"unmod: "+ChatColor.RESET+"This will unmod a player");

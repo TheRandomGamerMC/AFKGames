@@ -25,6 +25,7 @@ public class JoinCommand implements ICommand {
             return;
         }
         g.addPlayer(p);
+        p.teleport(g.getSpawn());
     }
 
     public boolean hasPermission(Player p) {

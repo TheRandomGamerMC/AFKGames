@@ -78,10 +78,21 @@ public class Game {
         this.players = players;
     }
 
+    public void removePlayer(Player p){
+        if (players.contains(p)) {
+            players.remove(p);
+        }
+    }
+
     public void addPlayer(Player p){
         players.add(p);
     }
 
+    public Location getSpawn() {
+        return spawn;
+    }
 
-
+    public void setSpawn(Location spawn) {
+        this.spawn = spawn;
+    }
 }
