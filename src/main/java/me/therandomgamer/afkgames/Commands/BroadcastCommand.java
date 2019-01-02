@@ -32,7 +32,6 @@ public class BroadcastCommand implements ICommand {
         if(GameManager.getInstance().getLeaders().contains(p)){
             return true;
         }
-
         return false;
     }
 }
