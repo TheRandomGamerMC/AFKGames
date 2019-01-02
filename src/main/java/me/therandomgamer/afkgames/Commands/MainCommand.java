@@ -1,4 +1,4 @@
-package Commands;
+package me.therandomgamer.afkgames.Commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -30,12 +30,12 @@ public class MainCommand implements CommandExecutor {
         ICommand ic = commandMap.get(args[0]);
 
 
-        if(commandSender instanceof Player && ! ic.hasPermissiom((Player) commandSender)) {
+        if((! (commandSender instanceof Player) || ! ic.hasPermission((Player) commandSender))) {
             commandSender.sendMessage(ChatColor.RED+"You don't have permission to do this");
             return false;
         }
 
-        ic.execute(commandSender,args);
+        ic.execute((Player) commandSender,args);
 
         return true;
     }

@@ -1,4 +1,6 @@
-import Commands.MainCommand;
+package me.therandomgamer.afkgames;
+
+import me.therandomgamer.afkgames.Commands.MainCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
